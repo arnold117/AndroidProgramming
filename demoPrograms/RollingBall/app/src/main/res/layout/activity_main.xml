@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ball_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <nchu.bme.rollingball.BallView
+        android:id="@+id/ball"
+        android:src="@drawable/ball"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+   </nchu.bme.rollingball.BallView>
+</FrameLayout>

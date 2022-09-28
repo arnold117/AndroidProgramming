@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".MainActivity">
+    <!-- 添加一个居中显示的文本视图textView1 -->
+    <!-- 添加一个按钮button2，该按钮与textView1的右边界对齐 -->
+    <!-- 添加一个在button2左侧显示的按钮button1 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="发现有Widget的新版本，您想现在就安装吗？"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="365dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignRight="@id/textView1"
+        android:text="以后再说"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="405dp" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toLeftOf="@id/button2"
+        android:text="现在更新"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="405dp" />
+</RelativeLayout>

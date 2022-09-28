@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">传感器测试</string>
+    <string name="gravity">重力传感器取值</string>
+    <string name="light">光线传感器取值</string>
+</resources>

@@ -1,0 +1,13 @@
+
+<resources>
+    <string name="app_name">Windows Phone 10.1</string>
+    <string name="textView1">微信</string>
+    <string name="textView2">通讯录</string>
+    <string name="textView3">QQ</string>
+    <string name="textView4">相机</string>
+    <string name="textView5">时钟</string>
+    <string name="textView6">备忘录</string>
+    <string name="textView7">音乐</string>
+    <string name="textView8">互联网</string>
+    <string name="textView9">邮件</string>
+</resources>

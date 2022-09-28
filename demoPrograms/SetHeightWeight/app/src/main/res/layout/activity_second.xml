@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/height_et"
+        android:layout_margin="10dp"
+        android:textColorHint="#cdcdcd"
+        android:textSize="15dp"
+        android:hint="输入身高/cm"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/weight_et"
+        android:layout_margin="10dp"
+        android:textColorHint="#cdcdcd"
+        android:textSize="15dp"
+        android:hint="输入体重/kg"
+        android:background="@drawable/et_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/ok_btn"
+        android:textSize="17sp"
+        android:text="完      成"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

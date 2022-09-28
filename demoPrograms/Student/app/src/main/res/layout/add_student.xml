@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset" >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip"      >
+        <TextView android:id="@+id/tv_stu_text_id"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="学员ID："     />
+
+        <TextView
+            android:id="@+id/tv_stu_id"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/tv_stu_text_id"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="7dp"
+            android:layout_toRightOf="@id/tv_stu_text_id"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="未分配ID"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView android:id="@+id/tv_name_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_stu_text_id"
+            android:layout_alignLeft="@id/tv_stu_text_id"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="姓名："      />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/tv_name_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/tv_name_text"
+            android:hint="请输入姓名，如liukenken"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dip" />
+
+        <TextView android:id="@+id/tv_age_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_name_text"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="年龄："      />
+        <EditText android:id="@+id/et_age"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_age_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_age_text"
+            android:hint="请输入年龄"
+            android:paddingLeft="20dip"
+            android:maxLength="3"
+            android:inputType="number"      />
+        <TextView android:id="@+id/tv_sex_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_below="@id/tv_age_text"
+            android:layout_alignLeft="@id/tv_age_text"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="性别："
+            android:textSize="16sp"      />
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/tv_sex_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_sex_text"         >
+            <RadioButton
+                android:id="@+id/rb_sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="男"
+                android:textSize="16sp"        />
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/rb_sex_female"
+                android:layout_weight="1"
+                android:textSize="16sp">
+            </RadioButton>
+        </RadioGroup>
+        <TextView  android:id="@+id/tv_likes_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_below="@id/rg_sex"
+            android:layout_alignLeft="@id/tv_sex_text"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="爱好："
+            android:textSize="16sp"     />
+        <CheckBox    android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_likes_text"
+            android:layout_below="@+id/rg_sex"
+            android:text="@string/box1"    ></CheckBox>
+        <CheckBox    android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/box1"
+            android:layout_below="@+id/rg_sex"
+            android:text="@string/box2">
+
+        </CheckBox>
+        <CheckBox     android:id="@+id/box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/box2"
+            android:layout_below="@+id/rg_sex"
+            android:text="@string/box3"     >
+        </CheckBox>
+        <TextView android:id="@+id/tv_phone_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_likes_text"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="联系电话："     />
+        <EditText android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_phone_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_phone_text"
+            android:hint="请输入手机号"
+            android:paddingLeft="20dip"
+            android:inputType="phone"
+            android:maxLength="11"     />
+        <TextView android:id="@+id/tv_traindate_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_phone_text"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="入学日期"              />
+        <EditText android:id="@+id/et_traindate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_traindate_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_traindate_text"
+            android:hint="点击选择日期"
+            android:inputType="date"
+            android:paddingLeft="20dip"
+            android:focusable="false"     />
+        <Button android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:layout_below="@id/tv_traindate_text"
+            android:layout_alignRight="@id/rg_sex">
+        </Button>
+        <Button android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            android:layout_below="@id/tv_traindate_text"
+            android:layout_toLeftOf="@id/btn_save"
+            android:layout_marginRight="10dip">
+        </Button>
+    </RelativeLayout> </ScrollView>

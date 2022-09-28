@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="40dip"
+    android:layout_width="80dip">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/delete" android:title="删除学员信息" />
+        <item android:id="@+id/look" android:title="详细信息" />
+        <item android:id="@+id/write" android:title="修改学员信息" />
+    </group>
+</menu>

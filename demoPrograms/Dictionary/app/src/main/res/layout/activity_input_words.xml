@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_frist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ye1">
+
+    <!--欢迎标题-->
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="欢迎您,"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="你好"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--单词录入区-->
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="单词："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_words"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入单词" />
+    </LinearLayout>
+
+    <!--翻译录入区-->
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="翻译："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_translate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入翻译" />
+    </LinearLayout>
+
+    <!--录入按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_3"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="录入"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--底部按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="录词"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_recite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="背词"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="查词"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_selfcenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="个人中心"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

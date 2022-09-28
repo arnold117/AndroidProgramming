@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ye">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="修改用户名"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="@drawable/icon_my_self"
+            android:id="@+id/self_tv_resetname"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="单词库"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="@drawable/icon_my_self"
+            android:id="@+id/self_tv_allwords"
+            />
+
+    </LinearLayout>
+</ScrollView>

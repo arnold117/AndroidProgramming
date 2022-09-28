@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_frist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ye">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#B3B3B3"
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabSelectedTextColor="@color/colorBlue"
+        android:background="#D5D5D5"
+        app:tabMode="fixed">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--底部按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="录词"
+            android:textSize="16sp"
+            android:onClick="setButton_inputListener"/>
+
+        <Button
+            android:id="@+id/btn_recite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="背词"
+            android:textSize="16sp"
+            android:onClick="setButton_reciteListener"/>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="查词"
+            android:textSize="16sp"
+            android:onClick="setButton_checkListener"/>
+
+        <Button
+            android:id="@+id/btn_selfcenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="个人中心"
+            android:textSize="16sp"
+            android:onClick="setButton_selfListener"/>
+    </LinearLayout>
+</RelativeLayout>

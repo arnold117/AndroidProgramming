@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/explosion_1" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_2" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_3" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_4" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_5" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_6" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_7" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_8" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_9" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_10" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_11" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_12" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_13" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_14" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_15" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_16" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_17" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_18" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_19" android:duration="150"/>
+    <item android:drawable="@drawable/explosion_20" android:duration="150"/>
+
+</animation-list>

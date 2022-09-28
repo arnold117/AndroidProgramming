@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView1_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView2_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView3_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView4_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView5_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView6_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView7_marginLeft"
+        android:layout_marginTop="@dimen/textView_marginTop"
+        android:textColor="@color/textColor"
+        />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="@dimen/btn_marginTop"
+        android:text="随机选号"
+        android:background="@color/btn_Color"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="@dimen/btn_marginLeft"
+        android:layout_marginRight="@dimen/btn_marginRight"
+        />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <EditText
+        android:id="@+id/et_srarch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入学员姓名"
+        android:inputType="textPersonName" />
+    <Button
+        android:id="@+id/bn_sure_search"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"         />
+    <Button
+        android:id="@+id/bn_return"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"         />
+    <LinearLayout
+        android:id="@+id/linersearch"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ID     姓 名     年 龄     性 别     爱 好     电 话     日 期"
+            />
+        <ListView
+            android:id="@+id/searchListView"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+        <Button
+            android:id="@+id/return_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"     />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ye1"
+    android:weightSum="1">
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入汉语"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/query_et_translate"
+        android:layout_weight="0.01" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入单词"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/query_et_word"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="20sp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:textSize="20sp"
+            android:text="汉译英"
+            android:id="@+id/query_btn_translate"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="英译汉"
+            android:id="@+id/query_btn_word"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

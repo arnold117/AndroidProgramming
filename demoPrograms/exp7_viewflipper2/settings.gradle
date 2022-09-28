@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "exp7_viewflipper"

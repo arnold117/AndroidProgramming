@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 导航条图片-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top"/>
+    <!-- 地区-->
+    <EditText
+        android:id="@+id/et_site1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入所在地区"
+        android:paddingTop="50dp"/>
+    <!-- 街道-->
+    <EditText
+        android:id="@+id/et_site2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_site1"
+        android:hint="请输入街道"/>
+    <!-- 详细地址-->
+    <EditText
+        android:id="@+id/et_site3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_site2"
+        android:hint="请输入详细地址"/>
+    <!--姓名-->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_site3"
+        android:hint="请输入收货人姓名"/>
+    <!--电话-->
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:hint="请输入收货人联系电话"/>
+    <!--邮箱-->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phone"
+        android:hint="请输入邮编"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FF5000"
+        android:text="保存"
+        />
+</RelativeLayout>

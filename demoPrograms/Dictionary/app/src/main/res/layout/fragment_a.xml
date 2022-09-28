@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/ye1"
+    android:weightSum="1">
+
+    <!--单词显示与输入区域-->
+    <TextView
+        android:id="@+id/tv_word_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.01"
+        android:gravity="center"
+        android:text="这里显示单词"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_translate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="这里输入翻译"
+        android:textSize="20sp" />
+
+    <!--按钮区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ensure"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="确定"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="删除"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

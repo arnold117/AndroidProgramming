@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+    <!-- 开始游戏图片按钮 -->
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:src="@mipmap/bt_start"
+        />
+    <!-- 切换账号图片按钮 -->
+    <ImageButton
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:src="@mipmap/bt_switch"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

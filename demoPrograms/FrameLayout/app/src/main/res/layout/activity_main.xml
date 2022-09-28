@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@mipmap/rabbit"
+    android:foregroundGravity="bottom|right"
+    tools:context=".MainActivity">
+    <!-- 添加居中显示的蓝色背景的TextView，将显示在最下层 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:background="#FF0000FF"
+        android:textColor="#FFFFFF"
+        android:text="蓝色背景的TextView" />
+    <!-- 添加居中显示的天蓝色背景的TextView，将显示在中间层 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:background="#FF0077FF"
+        android:textColor="#FFFFFF"
+        android:text="天蓝色背景的TextView" />
+    <!-- 添加居中显示的水蓝色背景的TextView，将显示在最上层 -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="#FF00B4FF"
+        android:textColor="#FFFFFF"
+        android:text="水蓝色背景的TextView" />
+</FrameLayout>
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#8BC34A"
+            android:text="数一:"
+            android:textSize="17sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#8BC34A"
+            android:text="数二:"
+            android:textSize="17sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_column="0"
+            android:background="#6281F3"
+            android:text="加"
+            android:layout_width="93dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/sub"
+            android:background="#A87EAF"
+            android:text="减"
+            android:layout_width="93dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/mul"
+            android:background="#FFEB3B"
+            android:text="乘"
+            android:layout_width="93dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/div"
+            android:background="@android:color/holo_orange_dark"
+            android:text="除"
+            android:layout_width="93dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/res1"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#FFFFFF"
+            android:text="计算结果为:"
+            android:textColor="#050505"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#F8F7F7"
+            android:background="#ADE6ED"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

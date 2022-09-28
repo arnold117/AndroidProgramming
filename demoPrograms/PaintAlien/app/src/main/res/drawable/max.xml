@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@mipmap/max_1" android:duration="150"/>
+    <item android:drawable="@mipmap/max_2" android:duration="150"/>
+    <item android:drawable="@mipmap/max_3" android:duration="150"/>
+    <item android:drawable="@mipmap/max_4" android:duration="150"/>
+    <item android:drawable="@mipmap/max_5" android:duration="150"/>
+    <item android:drawable="@mipmap/max_6" android:duration="150"/>
+    <item android:drawable="@mipmap/max_7" android:duration="150"/>
+    <item android:drawable="@mipmap/max_8" android:duration="150"/>
+    <item android:drawable="@mipmap/max_9" android:duration="150"/>
+    <item android:drawable="@mipmap/max_10" android:duration="150"/>
+    <item android:drawable="@mipmap/max_11" android:duration="150"/>
+    <item android:drawable="@mipmap/max_12" android:duration="150"/>
+    <item android:drawable="@mipmap/max_13" android:duration="150"/>
+    <item android:drawable="@mipmap/max_14" android:duration="150"/>
+    <item android:drawable="@mipmap/max_15" android:duration="150"/>
+    <item android:drawable="@mipmap/max_16" android:duration="150"/>
+    <item android:drawable="@mipmap/max_17" android:duration="150"/>
+    <item android:drawable="@mipmap/max_18" android:duration="150"/>
+    <item android:drawable="@mipmap/max_19" android:duration="150"/>
+    <item android:drawable="@mipmap/max_20" android:duration="150"/>
+    <item android:drawable="@mipmap/max_21" android:duration="150"/>
+    <item android:drawable="@mipmap/max_22" android:duration="150"/>
+    <item android:drawable="@mipmap/max_23" android:duration="150"/>
+    <item android:drawable="@mipmap/max_24" android:duration="150"/>
+    <item android:drawable="@mipmap/max_25" android:duration="150"/>
+    <item android:drawable="@mipmap/max_26" android:duration="150"/>
+    <item android:drawable="@mipmap/max_27" android:duration="150"/>
+    <item android:drawable="@mipmap/max_28" android:duration="150"/>
+    <item android:drawable="@mipmap/max_29" android:duration="150"/>
+    <item android:drawable="@mipmap/max_30" android:duration="150"/>
+</animation-list>
