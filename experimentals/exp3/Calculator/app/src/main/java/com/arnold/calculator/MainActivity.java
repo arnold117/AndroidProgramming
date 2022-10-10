@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int offset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNumber = (EditText) findViewById(R.id.num_2);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                int num1 = Integer.parseInt(firstNumber.getText().toString());
-                int num2 = Integer.parseInt(secondNumber.getText().toString());
-                int sum = num1 + num2;
+                double num1 = Double.parseDouble(firstNumber.getText().toString());
+                double num2 = Double.parseDouble(secondNumber.getText().toString());
+                double sum = num1 + num2;
+                String msg = Double.toString(num1) + " + " + Double.toString(num2) + " = " + Double.toString(sum) + "\n";
 
-                result.setText(Integer.toString(sum));
+                result.append(msg);
+                offset=result.getLineCount()*result.getLineHeight();
+                if(offset>result.getHeight()){
+                    result.scrollTo(0,offset-result.getHeight());
+                }
             }
         });
 
@@ -42,11 +49,16 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNumber = (EditText) findViewById(R.id.num_2);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                int num1 = Integer.parseInt(firstNumber.getText().toString());
-                int num2 = Integer.parseInt(secondNumber.getText().toString());
-                int sub = num1 - num2;
+                double num1 = Double.parseDouble(firstNumber.getText().toString());
+                double num2 = Double.parseDouble(secondNumber.getText().toString());
+                double sub = num1 - num2;
+                String msg = Double.toString(num1) + " - " + Double.toString(num2) + " = " + Double.toString(sub) + "\n";
 
-                result.setText(Integer.toString(sub));
+                result.append(msg);
+                offset=result.getLineCount()*result.getLineHeight();
+                if(offset>result.getHeight()){
+                    result.scrollTo(0,offset-result.getHeight());
+                }
             }
         });
 
@@ -57,11 +69,16 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNumber = (EditText) findViewById(R.id.num_2);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                int num1 = Integer.parseInt(firstNumber.getText().toString());
-                int num2 = Integer.parseInt(secondNumber.getText().toString());
-                int mul = num1 * num2;
+                double num1 = Double.parseDouble(firstNumber.getText().toString());
+                double num2 = Double.parseDouble(secondNumber.getText().toString());
+                double mul = num1 * num2;
+                String msg = Double.toString(num1) + " * " + Double.toString(num2) + " = " + Double.toString(mul) + "\n";
 
-                result.setText(Integer.toString(mul));
+                result.append(msg);
+                offset=result.getLineCount()*result.getLineHeight();
+                if(offset>result.getHeight()){
+                    result.scrollTo(0,offset-result.getHeight());
+                }
             }
         });
 
@@ -72,11 +89,16 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNumber = (EditText) findViewById(R.id.num_2);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                int num1 = Integer.parseInt(firstNumber.getText().toString());
-                int num2 = Integer.parseInt(secondNumber.getText().toString());
-                int div = num1 / num2;
+                double num1 = Double.parseDouble(firstNumber.getText().toString());
+                double num2 = Double.parseDouble(secondNumber.getText().toString());
+                double div = num1 / num2;
+                String msg = Double.toString(num1) + " / " + Double.toString(num2) + " = " + Double.toString(div) + "\n";
 
-                result.setText(Integer.toString(div));
+                result.append(msg);
+                offset=result.getLineCount()*result.getLineHeight();
+                if(offset>result.getHeight()){
+                    result.scrollTo(0,offset-result.getHeight());
+                }
             }
         });
     }
