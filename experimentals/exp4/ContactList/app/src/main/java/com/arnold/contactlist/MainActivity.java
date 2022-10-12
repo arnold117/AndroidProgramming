@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 R.mipmap.img04, R.mipmap.img05, R.mipmap.img06,
                 R.mipmap.img07, R.mipmap.img08, R.mipmap.img09,
         }; // 定义并初始化保存图片id的数组
-        String[] title = new String[]{"刘一", "陈二", "张三", "李四", "王五",
-                "赵六", "孙七", "周八", "吴九"}; // 定义并初始化保存列表项文字的数组
+        String[] title = new String[]{"费尔巴哈", "霍布斯", "霍拉克利特", "狄德罗", "培根", "马克思",
+                "恩格斯", "列宁", "毛泽东"}; // 定义并初始化保存列表项文字的数组
         List<Map<String, Object>> listItems = new ArrayList<Map<String, Object>>(); // 创建一个list集合
         // 通过for循环将图片id和列表项文字放到Map中，并添加到list集合中
         for (int i = 0; i < imageId.length; i++) {
