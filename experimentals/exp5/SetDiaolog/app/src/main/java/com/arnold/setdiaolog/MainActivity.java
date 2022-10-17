@@ -1,6 +1,7 @@
 package com.arnold.setdiaolog;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-    private RelativeLayout rl;
+    private ConstraintLayout rl;
     private TextView tv;
 
     @Override
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rl = (RelativeLayout) findViewById(R.id.rl_layout);
+        rl = (ConstraintLayout) findViewById(R.id.rl_layout);
         tv = (TextView) findViewById(R.id.tv_show);
         //设置布局的点击事件
         rl.setOnClickListener(new View.OnClickListener() {
